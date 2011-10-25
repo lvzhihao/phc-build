@@ -47,4 +47,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 /usr/local/phc
 /usr/bin
-~          
