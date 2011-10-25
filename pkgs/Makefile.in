@@ -1,0 +1,13 @@
+include version.mk
+
+SUB_DIRS=gmp mpfr gc gcc boost php phc
+
+all:
+	@(for i in $(SUB_DIRS);do $(MAKE) -C $$i $@ || exit -1;done)
+
+install: all
+	@(for i in $(SUB_DIRS);do $(MAKE) -C $$i $@ || exit -1;done)
+
+clean:
+	@(for i in $(SUB_DIRS);do $(MAKE) -C $$i $@ || exit -1;done)
+	rm -rf ${tmp_pkgs}
