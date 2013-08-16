@@ -2,7 +2,7 @@ include ../../support/include.mk
 include ../version.mk
 
 pkgname=${gcc_pkgname}
-fileurl="http://mirror.ustc.edu.cn/gnu/gcc/${pkgname}/${pkgname}.tar.bz2"
+fileurl="http://mirrors.ustc.edu.cn/gnu/gcc/${pkgname}/${pkgname}.tar.bz2"
 
 ldlibpath=LD_LIBRARY_PATH=${tmp_pkgs}/${gmp_pkgname}/lib:${tmp_pkgs}/${mpfr_pkgname}/lib:${LD_LIBRARY_PATH}
 
